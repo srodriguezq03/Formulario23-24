@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            background-color: rgb(4, 148, 124);
+            text-align: center;
+            color: black;
+        }
+
+        .input {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname" value="" class="input"><br><br>
+
+        <label for="checkbox">Aceptar términos:</label><br>
+        <input type="checkbox" id="checkbox" name="checkbox" value="" class="input"><br><br>
+
+        <label for="color">Color favorito:</label><br>
+        <input type="color" id="color" name="color" value="" class="input"><br><br>
+
+        <label for="date">Fecha de nacimiento:</label><br>
+        <input type="date" id="date" name="date" value="" class="input"><br><br>
+
+        <label for="datename-local">Fecha y hora actual:</label><br>
+        <input type="datetime-local" id="datename-local" name="datename-local" value="" class="input"><br><br>
+
+        <label for="email">Introduce tu correo electrónico:</label><br>
+        <input type="email" id="email" name="email" value="" class="input"><br><br>
+
+        <label for="file">Sube tu fichero:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+
+        <label for="file">Oculto:</label><br>
+        <input type="hidden" id="hidden" name="hidden" value="" class="input"><br><br>
+
+        <label for="image">Sube tu imagen:</label><br>
+        <input type="image" id="image" alt="imagen"
+        src="https://img.freepik.com/vector-gratis/formulario-documento-linea-acuerdo-digital-contrato-electronico-cuestionario-internet-hacer-lista-tenga-cuenta-boleta-votacion-elemento-diseno-plano-encuesta_335657-2667.jpg" height="300px" width="300px"><br><br>
+
+        <label for="month">Mes:</label><br>
+        <input type="month" id="month" name="month" value="" class="input"><br><br>
+
+        <label for="number">Número:</label><br>
+        <input type="number" id="number" name="number" value="" class="input"><br><br>
+
+        <label for="password">Pon tu contraseña:</label><br>
+        <input type="password" id="password" name="password" value="" class="input"><br><br>
+
+        <label for="radio">Radio:</label><br>
+        <input type="radio" id="radio" name="radio" value="" class="input"><br><br>
+
+        <label for="range">Rango:</label><br>
+        <input type="range" id="range" name="range" class="input"><br><br>
+
+        <label for="search">Buscador:</label><br>
+        <input type="search" id="search" name="reset" value="" class="input"><br><br>
+
+        <label for="tel">Número de teléfono:</label><br>
+        <input type="tel" id="tel" name="tel" value="" class="input"><br><br>
+
+        <label for="time">Hora:</label><br>
+        <input type="time" id="time" name="time" value="" class="input"><br><br>
+
+        <label for="url">URL:</label><br>
+        <input type="url" id="url" name="url" value="" class="input"><br><br>
+
+        <label for="week">Semana:</label><br>
+        <input type="week" id="week" name="week" value="" class="input"><br><br>
+
+
+        <label for="ciudadpractica">Ciudad favorita para hacer las prácticas:</label><br>
+        <select name="ciudadpractica" id="ciudadpractica">
+            <option>Cáceres</option>
+            <option>Mérida</option>
+            <option>Badajoz</option>
+            <option>Don Benito</option>
+        </select><br><br>
+
+        <label for="grupo_comunidad">Comunidades y provincias:</label><br>
+        <select id="grupo_comunidad">
+            <optgroup label="Extremadura">
+                <option>Badajoz</option>
+                <option>Cáceres</option>
+            </optgroup>
+            <optgroup label="Andalucía">
+                <option>Huelva</option>
+                <option>Sevilla</option>
+                <option>Cádiz</option>
+                <option>Málaga</option>
+                <option>Córdoba</option>
+                <option>Jaén</option>
+                <option>Granada</option>
+                <option>Almería</option>
+            </optgroup>
+            <optgroup label="Castilla-La Mancha">
+                <option>Toledo</option>
+                <option>Ciudad Real</option>
+                <option>Albacete</option>
+                <option>Cuenca</option>
+                <option>Guadalajara</option>
+            </optgroup>
+        </select><br><br>
+
+        <label>Vehículo:</label><br>
+        <input type="radio" id="vehiculo1" name="vehiculo" value="Bicicleta">
+        <label for="vehiculo1"> Tengo una bicicleta</label><br>
+        <input type="radio" id="vehiculo2" name="vehiculo" value="Coche">
+        <label for="vehiculo2"> Tengo un coche</label><br>
+        <input type="radio" id="vehiculo3" name="vehiculo" value="no">
+        <label for="vehiculo3"> No tengo vehículo</label><br><br>
+
+
+        <label for="coche">Marcas de coche:</label><br>
+        <datalist id="coche">
+            <option value="Ferrari">
+            <option value="Lamborghini">
+            <option value="Mercedes-Benz">
+            <option value="Audi">
+            <option value="Citröen">
+            <option value="Chevrolet">
+            <option value="Ford">
+            <option value="Volkswagen">
+            <option value="Peugeot">
+            <option value="Dodge">
+            <option value="Honda">
+            <option value="Hyundai">
+            <option value="Nissan">
+            <option value="Toyota">
+            <option value="Dacia">
+            <option value="Tesla">
+        </datalist>
+        <input list="coche" name="coche_elegido"><br><br>
+
+        <fieldset>
+            <legend>Género:</legend>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="Masculino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="femenino" name="genero" value="Femenino">
+            <label for="otro">Otro</label>
+            <input type="radio" id="otro" name="genero" value="Otro">
+        </fieldset><br><br>
+
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="20" cols="100" class="input"></textarea><br><br>
+
+        <label for="reset">Reset:</label><br>
+        <input type="reset" id="reset" name="reset" value="" class="input"><br>
+
+        <label for="sumbit"></label><br>
+        <input type="submit" id="sumbit" name="submit"><br><br>
+    </form>
+</body>
+
+</html>
